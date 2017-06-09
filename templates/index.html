@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>即时聊天</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="lib/socket.io/socket.io.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/layer/layer.js"></script>
+    <script src="javascripts/app.js"></script>
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chatcontent">
+            <div class="header">
+                龙哥的聊天室
+                <span style="float:right;">当前在线人数<b id="count">0</b></span>
+            </div>
+            <ul id="content">
+                <div class="clearfix"></div>
+            </ul>
+            <textarea id="textMsg"></textarea>
+            <button type="button" id="sendBtn">发送</button>
+        </div>
+        <div class="block" id="login">
+            <div class="login">
+                <h2>输入您的用户名</h2>
+                <input type="text" id="inputLogin">
+                <button type="button" id="loginBtn">登录</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

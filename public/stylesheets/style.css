@@ -1,0 +1,102 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {}
+
+.block {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.block .login {
+    padding-top: 100px;
+    width: 200px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.block .login input {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.block .login button {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chat {
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chat .header {
+    background: #ccc;
+    padding: 0 15px;
+}
+
+.chat .chatcontent {
+    height: 500px;
+    border: 1px solid #000;
+    position: relative;
+    border-radius: 5px;
+}
+
+.chat ul {
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+    background-color: #ccc;
+    height: 375px;
+    overflow-y: scroll;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.chat ul li.my {
+    clear: both;
+    float: left;
+}
+
+.chat ul li.siblings {
+    clear: both;
+    float: right;
+}
+
+.chat ul li.my h3 {
+    text-align: left;
+}
+
+.chat ul li.siblings h3 {
+    text-align: right;
+}
+
+.chat textarea {
+    width: 492px;
+    max-width: 492px;
+    height: 100px;
+    max-height: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.chat .chatcontent button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
