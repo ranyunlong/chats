@@ -24,7 +24,7 @@ window.onload = function() {
         //判断用户名长度
         if (username.length > 0) {
             //建立socket 连接
-            socket = io.connect('http://192.168.1.131:5000');
+            socket = io.connect('http://www.esayscript.com:5000');
             socket.emit('login', username);
             regsiter(socket);
         } else {
